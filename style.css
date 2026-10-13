@@ -1,0 +1,331 @@
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf7;
+    color: #333;
+    line-height: 1.6;
+}
+
+hr {
+    border: none;
+}
+
+/* HEADER */
+header {
+    background-color: #ffffff;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 12px #eadede;
+}
+
+header h1 {
+    color: #c94f78;
+    font-size: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d94f83;
+}
+
+/* HERO SECTION */
+body > section:nth-of-type(1) {
+    background: linear-gradient(120deg, #ffe5ed, #fff5ef);
+    padding: 65px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    min-height: 430px;
+}
+
+body > section:nth-of-type(1) br {
+    display: none;
+}
+
+body > section:nth-of-type(1) > p:first-child {
+    grid-column: 1;
+    grid-row: 1;
+    color: #c94f78;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+body > section:nth-of-type(1) h1 {
+    grid-column: 1;
+    grid-row: 2;
+    color: #512c3b;
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+body > section:nth-of-type(1) > p:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 3;
+    font-size: 17px;
+    color: #66545a;
+    margin-bottom: 15px;
+}
+
+body > section:nth-of-type(1) > a {
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: start;
+    background-color: #c94f78;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body > section:nth-of-type(1) > a:hover {
+    background-color: #a93460;
+}
+
+body > section:nth-of-type(1) img {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+    object-fit: cover;
+    justify-self: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px #d8b5c0;
+}
+
+/* SECTION HEADINGS */
+body > section:nth-of-type(2),
+body > section:nth-of-type(3),
+body > section:nth-of-type(4),
+body > section:nth-of-type(5) {
+    padding: 55px 7%;
+    text-align: center;
+}
+
+section h2 {
+    color: #512c3b;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+/* WHY CHOOSE US */
+body > section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+body > section:nth-of-type(2) h2 {
+    grid-column: 1 / -1;
+}
+
+body > section:nth-of-type(2) > div {
+    background: white;
+    padding: 25px 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #eadede;
+    transition: 0.3s;
+}
+
+body > section:nth-of-type(2) > div:hover {
+    transform: translateY(-6px);
+}
+
+section h3 {
+    color: #c94f78;
+    margin-bottom: 10px;
+}
+
+/* POPULAR CAKES */
+body > section:nth-of-type(3) {
+    background-color: #fff0f4;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+body > section:nth-of-type(3) h2,
+body > section:nth-of-type(3) > p {
+    grid-column: 1 / -1;
+}
+
+body > section:nth-of-type(3) > div {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #eadede;
+    transition: 0.3s;
+}
+
+body > section:nth-of-type(3) > div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px #dfb8c5;
+}
+
+body > section:nth-of-type(3) br {
+    display: none;
+}
+
+body > section:nth-of-type(3) img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+body > section:nth-of-type(3) h3 {
+    margin-top: 12px;
+}
+
+body > section:nth-of-type(3) a {
+    display: inline-block;
+    margin-top: 12px;
+    background: #c94f78;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+body > section:nth-of-type(3) a:hover {
+    background: #a93460;
+}
+
+/* ABOUT SECTION */
+body > section:nth-of-type(4) {
+    max-width: 950px;
+    margin: auto;
+}
+
+body > section:nth-of-type(4) p {
+    color: #66545a;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+/* CALL TO ACTION */
+body > section:nth-of-type(5) {
+    background: linear-gradient(120deg, #f8c9d8, #ffe8d9);
+}
+
+body > section:nth-of-type(5) a {
+    display: inline-block;
+    margin: 12px 7px 0;
+    padding: 12px 22px;
+    border-radius: 25px;
+    background: #c94f78;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body > section:nth-of-type(5) a:hover {
+    background: #a93460;
+}
+
+/* FOOTER */
+footer {
+    background-color: #512c3b;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer h3 {
+    color: #ffd4e1;
+    font-size: 25px;
+}
+
+footer a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 7px;
+}
+
+footer a:hover {
+    color: #ffb5ce;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* LAPTOP / MOBILE RESPONSIVE */
+@media (max-width: 900px) {
+    body > section:nth-of-type(2) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    body > section:nth-of-type(3) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    body > section:nth-of-type(1) h1 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 4px;
+        font-size: 13px;
+    }
+
+    body > section:nth-of-type(1) {
+        grid-template-columns: 1fr;
+        padding: 40px 6%;
+    }
+
+    body > section:nth-of-type(1) img {
+        grid-column: 1;
+        grid-row: 5;
+        height: 230px;
+    }
+
+    body > section:nth-of-type(1) h1 {
+        font-size: 32px;
+    }
+
+    body > section:nth-of-type(2),
+    body > section:nth-of-type(3) {
+        grid-template-columns: 1fr;
+        padding: 35px 6%;
+    }
+
+    body > section:nth-of-type(2) h2,
+    body > section:nth-of-type(3) h2,
+    body > section:nth-of-type(3) > p {
+        grid-column: 1;
+    }
+
+    body > section:nth-of-type(3) img {
+        height: 230px;
+    }
+}
+</style>
