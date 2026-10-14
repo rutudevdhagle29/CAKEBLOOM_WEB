@@ -329,3 +329,337 @@ footer p {
     }
 }
 </style>
+
+<!-- ORDER CSS -->
+
+<style>
+    
+/* GENERAL DESIGN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf7;
+    color: #422b30;
+    line-height: 1.6;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #f0dfe3;
+    margin: 18px 0;
+}
+
+/* HEADER */
+header {
+    background: #ffffff;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 12px #eadede;
+}
+
+header h1 {
+    color: #c94f78;
+    font-size: 30px;
+}
+
+header nav {
+    display: flex;
+    gap: 25px;
+}
+
+header nav a {
+    color: #422b30;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #e34270;
+}
+
+/* HERO SECTION */
+body > section {
+    background: linear-gradient(110deg, #ffe5ec, #fff4ef);
+    min-height: 300px;
+    padding: 45px 8%;
+    position: relative;
+}
+
+body > section > p:first-child {
+    color: #b95b77;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+body > section > h1 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    color: #512c3b;
+    margin: 8px 0;
+}
+
+body > section > p:nth-of-type(2) {
+    color: #756269;
+    font-size: 16px;
+    max-width: 400px;
+}
+
+body > section > img {
+    position: absolute;
+    right: 8%;
+    top: 25px;
+    width: 38%;
+    max-width: 400px;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px #d9b7c1;
+}
+
+/* MAIN LAYOUT */
+main {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    gap: 25px;
+    padding: 35px 7%;
+    align-items: start;
+}
+
+/* ORDER FORM AND SUMMARY CARDS */
+main > section,
+main > aside {
+    background: #ffffff;
+    border: 1px solid #f3e5e5;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 5px 18px #eee2e2;
+}
+
+main h2 {
+    color: #512c3b;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    margin: 12px 0;
+}
+
+main > section > p {
+    color: #897b7f;
+    margin-bottom: 22px;
+    font-size: 14px;
+}
+
+/* FORM FIELDS */
+form > div {
+    margin-bottom: 18px;
+}
+
+form label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+form select,
+form input[type="text"],
+form input[type="tel"],
+form input[type="date"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e5d9dc;
+    border-radius: 9px;
+    background: #fffdfd;
+    color: #422b30;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    outline: none;
+    transition: 0.3s;
+}
+
+form select:focus,
+form input:focus,
+form textarea:focus {
+    border-color: #d94f78;
+    box-shadow: 0 0 5px #f5c5d3;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* PAYMENT OPTIONS */
+form input[type="radio"] {
+    accent-color: #d94f78;
+    margin-right: 7px;
+}
+
+form input[type="radio"] + label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+/* PLACE ORDER BUTTON */
+form button {
+    width: 100%;
+    background: linear-gradient(90deg, #df426f, #d83c69);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #ae2e55;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px #edc2cf;
+}
+
+/* ORDER SUMMARY */
+main > aside {
+    text-align: left;
+}
+
+main > aside > img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+main > aside h3 {
+    color: #c94f78;
+    margin: 12px 0 5px;
+}
+
+main > aside p {
+    color: #756269;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+main > aside p strong {
+    color: #c94f78;
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(110deg, #ffe8ee, #fff3ee);
+    text-align: center;
+    padding: 30px 15px;
+    border-top: 1px solid #f3dce3;
+}
+
+footer h2 {
+    color: #512c3b;
+    font-family: Georgia, serif;
+    margin-bottom: 5px;
+}
+
+footer p {
+    color: #8a737c;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+footer nav {
+    margin: 15px 0;
+}
+
+footer nav a {
+    color: #512c3b;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+footer nav a:hover {
+    color: #d83c69;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    body > section > img {
+        width: 35%;
+    }
+
+    body > section > h1 {
+        font-size: 38px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 18px 10px;
+    }
+
+    header nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav a {
+        font-size: 12px;
+    }
+
+    body > section {
+        padding: 30px 6%;
+    }
+
+    body > section > h1 {
+        font-size: 34px;
+    }
+
+    body > section > img {
+        position: static;
+        width: 100%;
+        height: 220px;
+        margin-top: 20px;
+    }
+
+    main {
+        padding: 20px 5%;
+        gap: 20px;
+    }
+
+    main > section,
+    main > aside {
+        padding: 18px;
+    }
+
+    main h2 {
+        font-size: 21px;
+    }
+
+    form input[type="radio"] + label {
+        margin-right: 8px;
+        font-size: 13px;
+    }
+}
+
+</style>

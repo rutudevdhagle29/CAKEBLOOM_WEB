@@ -1,21 +1,205 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="style.css">
+    <title>CakeNest - Order Your Cake</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav class="navbar">
-        <div class="logo">CakeBloom</div>
 
-        <div class="nav-links">
-           <a href="index.html">HOME</a>
-           <a href="variety.html">VARIETY</a>
-           <a href="#">ORDER</a>
-           <a href="contact.html">CONTACT</a>
-        </div>
-    </nav>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>🎂 CakeNest</h1>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="order.html">ORDER</a>
+            <a href="VARIETY.html">VARIETY</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section>
+        <p>ORDER YOUR FAVOURITE CAKE</p>
+
+        <h1>Place Your Order</h1>
+
+        <p>
+            Freshly baked, beautifully designed
+            cakes for your special moments.
+        </p>
+
+        <img src="assets/images/home.big.img.png"
+             alt="Chocolate Cake" width="400">
+    </section>
+
+    <!-- MAIN ORDER SECTION -->
+    <main>
+
+        <!-- ORDER FORM -->
+        <section>
+            <h2>Select Your Cake</h2>
+            <p>Choose from our delicious range of cakes.</p>
+
+            <form action="#" method="get">
+
+                <!-- CAKE SELECTION -->
+                <div>
+                    <label for="cake">Cake Name *</label>
+                    <select id="cake" name="cake" required>
+                        <option value="">Select Cake</option>
+                        <option value="Chocolate Cake">Chocolate Cake</option>
+                        <option value="Vanilla Cake">Vanilla Cake</option>
+                        <option value="Red Velvet Cake">Red Velvet Cake</option>
+                        <option value="Fruit Cake">Fruit Cake</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="size">Cake Size *</label>
+                    <select id="size" name="size" required>
+                        <option value="">Select Size</option>
+                        <option value="Half Kg">Half Kg</option>
+                        <option value="1 Kg">1 Kg</option>
+                        <option value="2 Kg">2 Kg</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="quantity">Quantity *</label>
+                    <select id="quantity" name="quantity" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <!-- SPECIAL INSTRUCTIONS -->
+                <div>
+                    <label for="message">
+                        Special Instructions (Optional)
+                    </label>
+
+                    <textarea id="message" name="message"
+                        placeholder="Write your cake message or design..."
+                        rows="4"></textarea>
+                </div>
+
+                <!-- DELIVERY DETAILS -->
+                <h2>🚚 Delivery Details</h2>
+
+                <div>
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname"
+                        name="fullname"
+                        placeholder="Enter your name" required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        pattern="[0-9]{10}" required>
+                </div>
+
+                <div>
+                    <label for="address">Delivery Address *</label>
+                    <textarea id="address" name="address"
+                        placeholder="Enter your complete address"
+                        rows="3" required></textarea>
+                </div>
+
+                <div>
+                    <label for="date">Delivery Date *</label>
+                    <input type="date" id="date"
+                        name="date" required>
+                </div>
+
+                <!-- PAYMENT METHOD -->
+                <h2>💳 Payment Method</h2>
+
+                <div>
+                    <input type="radio" id="cod"
+                        name="payment" value="Cash on Delivery"
+                        required>
+                    <label for="cod">Cash on Delivery</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="upi"
+                        name="payment" value="UPI">
+                    <label for="upi">UPI / GPay</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="card"
+                        name="payment" value="Card">
+                    <label for="card">Card Payment</label>
+                </div>
+
+                <!-- PLACE ORDER -->
+                <button type="submit">🛒 Place Order</button>
+
+            </form>
+        </section>
+
+        <!-- ORDER SUMMARY -->
+        <aside>
+            <h2>Your Order Summary</h2>
+
+            <img src="assets/images/home.choklet.img.png"
+                 alt="Chocolate Cake" width="300">
+
+            <h3>Delicious Cakes</h3>
+
+            <p>Freshly baked with love.</p>
+
+            <hr>
+
+            <p>✓ Freshly Baked</p>
+            <p>✓ Safe Packaging</p>
+            <p>✓ Carefully Delivered</p>
+            <p>✓ Quality Ingredients</p>
+
+            <hr>
+
+            <h3>Why Choose CakeNest?</h3>
+
+            <p>🎂 Premium Quality Cakes</p>
+            <p>🚚 Reliable Delivery</p>
+            <p>♡ Made for Your Special Moments</p>
+
+            <p>
+                <strong>
+                    Every celebration deserves a special cake!
+                </strong>
+            </p>
+        </aside>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>🎂 CakeNest</h2>
+
+        <p>Fresh Cakes, Happy Moments.</p>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="order.html">Order</a> |
+            <a href="VARIETY.html">Variety</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <p>© 2026 CakeNest. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
